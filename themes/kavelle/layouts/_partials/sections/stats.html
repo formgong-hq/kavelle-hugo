@@ -1,0 +1,6 @@
+{{- $c := hugo.Data.content -}}
+<div class="nums-wrap">
+  <div class="nums" aria-label="{{ $c.stats.label }}" data-in="up">
+    {{ range $n := $c.stats.items }}<div><b data-count="{{ $n.value }}">{{ $n.value }}</b><span>{{ $n.label }}</span></div>{{ end }}
+  </div>
+</div>

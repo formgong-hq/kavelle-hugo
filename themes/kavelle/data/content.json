@@ -1,0 +1,245 @@
+{
+  "site": {
+    "name": "Kavelle",
+    "lang": "en",
+    "title": "Kavelle — interior design and architecture studio",
+    "description": "Kavelle designs private homes, villas and restaurants from the first sketch to the last cushion. Projects, services and a form to discuss yours."
+  },
+  "form": {
+    "access_key": "fk_your_access_key"
+  },
+  "header": {
+    "lang_label": "EN",
+    "nav_left": [
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects"
+      }
+    ],
+    "nav_right": [
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Kavelle, interior design and architecture studio",
+    "button": "View project",
+    "count_total": "05",
+    "slides": [
+      {
+        "title": "Casa Luma",
+        "image": "img/slide-1.webp",
+        "alt": "A travertine villa behind a dark reflecting pool at dusk",
+        "label": "1 of 5",
+        "state": "on",
+        "loading": "eager"
+      },
+      {
+        "title": "Stone Ribbon",
+        "image": "img/slide-2.webp",
+        "alt": "A living room with a curved stone wall and green accents",
+        "label": "2 of 5",
+        "state": "",
+        "loading": "lazy"
+      },
+      {
+        "title": "North Glass",
+        "image": "img/slide-3.webp",
+        "alt": "A glass and dark timber house among pines in fog",
+        "label": "3 of 5",
+        "state": "",
+        "loading": "lazy"
+      },
+      {
+        "title": "Jade Room",
+        "image": "img/slide-4.webp",
+        "alt": "A dining room with deep green lacquered walls",
+        "label": "4 of 5",
+        "state": "",
+        "loading": "lazy"
+      },
+      {
+        "title": "Quiet Atelier",
+        "image": "img/slide-5.webp",
+        "alt": "A boutique showroom under warm stone arches",
+        "label": "5 of 5",
+        "state": "",
+        "loading": "lazy"
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "lead": "Homes, buildings and places to eat, from the first sketch to the last cushion. Drag the row or scroll it sideways.",
+    "items": [
+      {
+        "title": "Private",
+        "image": "img/cat-1.webp",
+        "alt": "A calm bedroom suite in stone and linen"
+      },
+      {
+        "title": "Architecture",
+        "image": "img/cat-2.webp",
+        "alt": "A concrete and timber house on a hillside"
+      },
+      {
+        "title": "Commercial",
+        "image": "img/cat-3.webp",
+        "alt": "A restaurant with green velvet booths"
+      }
+    ]
+  },
+  "about": {
+    "heading": "Studio philosophy",
+    "title_html": "A home that sounds<br>like its owner",
+    "image": "img/founder.webp",
+    "alt": "Ilse Kavell, founder of the studio",
+    "body_html": "<p>For me, design is a careful way of turning a feeling into a room. It does not matter how many things a space holds if together they say nothing about the people who live there. Comfort comes from a whole idea, and from materials, textures and objects that agree with each other.</p><p>Each project is led by one architect from the first meeting to the handover, with the whole studio behind them.</p>",
+    "sign_name": "Ilse Kavell,",
+    "sign_role": "Founder",
+    "button": "Read more"
+  },
+  "services": {
+    "heading": "Services",
+    "more": "More",
+    "items": [
+      {
+        "title_html": "Interior<br>design",
+        "topic": "Interior design",
+        "image": "img/svc-1.webp",
+        "alt": "Material samples and sketches on a table",
+        "delay": "0s"
+      },
+      {
+        "title_html": "Architecture",
+        "topic": "Architecture",
+        "image": "img/svc-2.webp",
+        "alt": "A white model of a house on a drawing",
+        "delay": ".08s"
+      },
+      {
+        "title_html": "Site<br>supervision",
+        "topic": "Site supervision",
+        "image": "img/svc-3.webp",
+        "alt": "An architect checking drawings on a building site",
+        "delay": ".16s"
+      },
+      {
+        "title_html": "Turnkey<br>project",
+        "topic": "Turnkey project",
+        "image": "img/svc-4.webp",
+        "alt": "A finished kitchen with stone and oak",
+        "delay": ".24s"
+      }
+    ]
+  },
+  "stats": {
+    "label": "The studio in numbers",
+    "items": [
+      {
+        "value": "14",
+        "label": "Years of practice"
+      },
+      {
+        "value": "120",
+        "label": "Homes finished"
+      },
+      {
+        "value": "9",
+        "label": "Countries"
+      },
+      {
+        "value": "18",
+        "label": "People in the studio"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Ready to talk about your project?",
+    "line_1": "Ready to talk about",
+    "line_2": "your project?",
+    "sub": "Fill in the form and we will get back to you within one working day.",
+    "subject": "New project from the website",
+    "label_name": "Name",
+    "label_email": "Email *",
+    "label_phone": "Phone *",
+    "label_message": "Comments",
+    "topics_legend": "What would you like to discuss?",
+    "topics": [
+      {
+        "value": "Interior design",
+        "checked": true
+      },
+      {
+        "value": "Architecture",
+        "checked": false
+      },
+      {
+        "value": "Site supervision",
+        "checked": false
+      },
+      {
+        "value": "Turnkey project",
+        "checked": false
+      }
+    ],
+    "send": "Send",
+    "thanks_title": "Thank you,",
+    "thanks_text": "We will call or write within one working day.",
+    "again": "Send another message"
+  },
+  "footer": {
+    "about": "Interior design and architecture studio. A fictional studio for a website template.",
+    "links_1": [
+      {
+        "label": "Home",
+        "href": "#top"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      }
+    ],
+    "links_2": [
+      {
+        "label": "Interior design",
+        "href": "#services"
+      },
+      {
+        "label": "Architecture",
+        "href": "#services"
+      },
+      {
+        "label": "Site supervision",
+        "href": "#services"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "hours": "Mon – Fri, 9 am – 6 pm",
+    "phone": "+44 20 7000 0000",
+    "phone_href": "tel:+442070000000",
+    "email": "studio@example.com",
+    "copyright": "© Kavelle. Names, projects and numbers are examples."
+  }
+}

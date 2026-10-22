@@ -1,0 +1,8 @@
+{{- $c := hugo.Data.content -}}
+<section id="projects" aria-labelledby="projects-h">
+  <h2 class="h2" id="projects-h" data-in="down">{{ $c.projects.heading }}</h2>
+  <p class="lead" data-in="up">{{ $c.projects.lead }}</p>
+  <div class="cats" data-cats>
+    {{ range $p := $c.projects.items }}<a class="cat ph" href="#contact" data-in="up"><img src="{{ ($p.image | relURL) }}" width="1200" height="800" alt="{{ $p.alt }}" loading="lazy" draggable="false"><span>{{ $p.title }}</span><em aria-hidden="true">→</em></a>{{ end }}
+  </div>
+</section>

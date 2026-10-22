@@ -1,0 +1,3 @@
+{{ define "main" }}
+<main class="fg-page"><article><h1>{{ .Title }}</h1>{{ with .Params.tags }}<p>{{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ "tags/" | relURL }}{{ $t | urlize }}/">{{ $t }}</a>{{ end }}</p>{{ end }}{{ .Content }}</article></main>
+{{ end }}

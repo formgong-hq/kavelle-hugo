@@ -1,0 +1,10 @@
+{{- $c := hugo.Data.content -}}
+<header id="top-bar">
+  <nav class="nav-l" aria-label="Main, left">{{ range $l := $c.header.nav_left }}<a href="{{ $l.href }}">{{ $l.label }}</a>{{ end }}</nav>
+  <a class="logo" href="#top" aria-label="{{ $c.site.name }}, home">{{ $c.site.name }}</a>
+  <div class="right">
+    <nav class="nav-r" aria-label="Main, right">{{ range $l := $c.header.nav_right }}<a href="{{ $l.href }}">{{ $l.label }}</a>{{ end }}</nav>
+    <span class="lang">{{ $c.header.lang_label }}</span>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" data-burger><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h18M3 16h18" /></svg></button>
+  </div>
+</header>

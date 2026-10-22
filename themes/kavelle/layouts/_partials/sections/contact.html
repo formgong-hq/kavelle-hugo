@@ -1,0 +1,25 @@
+{{- $c := hugo.Data.content -}}
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <h2 class="sr" id="contact-h">{{ $c.contact.heading }}</h2>
+  <div class="run l" aria-hidden="true" data-run>{{ $c.contact.line_1 }}</div>
+  <div class="run r" aria-hidden="true" data-run>{{ $c.contact.line_2 }}</div>
+  <p class="sub">{{ $c.contact.sub }}</p>
+  <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="16" cy="16" r="13" /><path d="M12 8v16M12 16l8-8M12 16l8 8" /></svg>
+  <form class="form" id="f-contact" action="{{ site.Params.formAction | default "https://formgong.com/submit" }}" method="POST">
+    <input type="hidden" name="access_key" value="{{ $c.form.access_key }}">
+    <input type="hidden" name="subject" value="{{ $c.contact.subject }}">
+    <div class="hp" aria-hidden="true"><label>Leave this field empty<input name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+    <div class="fl"><input id="c-name" name="name" autocomplete="name" placeholder=" " maxlength="100"><label for="c-name">{{ $c.contact.label_name }}</label></div>
+    <div class="fl"><input id="c-email" name="email" type="email" autocomplete="email" placeholder=" " required maxlength="160"><label for="c-email">{{ $c.contact.label_email }}</label></div>
+    <div class="fl full"><input id="c-phone" name="phone" type="tel" autocomplete="tel" placeholder=" " required maxlength="40"><label for="c-phone">{{ $c.contact.label_phone }}</label></div>
+    <fieldset class="chips">
+      <legend>{{ $c.contact.topics_legend }}</legend>
+      {{ range $t := $c.contact.topics }}<label><input type="radio" name="service" value="{{ $t.value }}"{{ if $t.checked }} checked{{ end }}><span>{{ $t.value }}</span></label>{{ end }}
+    </fieldset>
+    <div class="fl full"><textarea id="c-msg" name="message" placeholder=" " maxlength="3000"></textarea><label for="c-msg">{{ $c.contact.label_message }}</label></div>
+    <button class="btn" type="submit"><span data-send-label>{{ $c.contact.send }}</span></button>
+    <p class="status" data-status role="status" aria-live="polite"></p>
+    <p class="credit">Powered by <a href="https://formgong.com" rel="noopener">Formgong</a></p>
+    <div class="thanks" tabindex="-1"><strong>{{ $c.contact.thanks_title }} <span data-name>there</span></strong>{{ $c.contact.thanks_text }}<br><button type="button" data-again>{{ $c.contact.again }}</button></div>
+  </form>
+</section>

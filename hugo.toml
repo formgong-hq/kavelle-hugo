@@ -1,0 +1,7 @@
+baseURL = "/"
+title = "Kavelle"
+theme = "kavelle"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

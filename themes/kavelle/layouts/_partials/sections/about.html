@@ -1,0 +1,13 @@
+{{- $c := hugo.Data.content -}}
+<section id="about" aria-labelledby="about-h">
+  <h2 class="h2" id="about-h" data-in="down">{{ $c.about.heading }}</h2>
+  <div class="phil-grid">
+    <div class="ph" data-in="right"><img src="{{ ($c.about.image | relURL) }}" width="800" height="1000" alt="{{ $c.about.alt }}" loading="lazy"></div>
+    <div class="phil-txt" data-in="left">
+      <h3>{{ $c.about.title_html | safeHTML }}</h3>
+      <div class="body">{{ $c.about.body_html | safeHTML }}</div>
+      <p class="sign"><b>{{ $c.about.sign_name }}</b>{{ $c.about.sign_role }}</p>
+      <a class="btn" href="#contact">{{ $c.about.button }} <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>

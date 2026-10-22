@@ -1,0 +1,7 @@
+{{- $c := hugo.Data.content -}}
+<section id="services" aria-labelledby="services-h">
+  <h2 class="h2" id="services-h" data-in="down">{{ $c.services.heading }}</h2>
+  <div class="svc">
+    {{ range $s := $c.services.items }}<a href="#contact" data-in="up" data-service="{{ $s.topic }}" style="transition-delay:{{ $s.delay }}"><div class="top"><span class="more">{{ $c.services.more }}<svg viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 46 46 8M18 8h28v28" /></svg></span><h3>{{ $s.title_html | safeHTML }}</h3></div><div class="ph"><img src="{{ ($s.image | relURL) }}" width="800" height="1000" alt="{{ $s.alt }}" loading="lazy"></div></a>{{ end }}
+  </div>
+</section>
